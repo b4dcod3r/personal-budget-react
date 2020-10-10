@@ -1,0 +1,32 @@
+{
+    "myBudget": [
+      {
+        "label": "Groceries",
+        "budget": 300
+      },
+      {
+        "label": "Tuition",
+        "budget": 1000
+      },
+      {
+        "label": "Travel",
+        "budget": 150
+      },
+      {
+        "label": "Home",
+        "budget": 2000
+      },
+      {
+        "label": "Shopping",
+        "budget": 100
+      },
+      {
+        "label": "Bills",
+        "budget": 900
+      },
+      {
+        "label": "Loans",
+        "budget": 200
+      }
+    ]
+  }
