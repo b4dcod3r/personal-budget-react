@@ -1,7 +1,6 @@
-import React from "react";
-import { SimplePieChart } from "./simplePieChart";
-
+import React, { useEffect, useState } from "react";
 import './App.scss';
+import {SimplePieChart} from './SimplePieChart/SimplePieChart'
 
 import {
   BrowserRouter as Router,
@@ -18,7 +17,6 @@ import LoginPage from './LoginPage/LoginPage';
 
 
 function App() {
-
   return (
     <Router> 
         <Menu/>
@@ -35,8 +33,8 @@ function App() {
               <HomePage/>
             </Route>
           </Switch>
+          <SimplePieChart/>
         </div>
-        <SimplePieChart />
         <Footer/>
     </Router>
   );

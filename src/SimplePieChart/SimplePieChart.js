@@ -1,12 +1,7 @@
-import * as React from "react";
-import * as d3 from "d3";
 import Chart from "chart.js";
 import axios from "axios";
-import { create } from "d3";
 
 export const SimplePieChart = () => {
-    const height = 400;
-    const width = 400;
 
     var budget_labels = [];
     var budget_values = [];
@@ -27,7 +22,7 @@ export const SimplePieChart = () => {
         }],
         labels: []
     };
-
+    
     function createChart() {
         var ctx = document.getElementById("pieChart").getContext("2d");
         new Chart(ctx, {
@@ -35,7 +30,6 @@ export const SimplePieChart = () => {
             data: dataSource
         });
     };
-
     function getData(){
          axios.get('http://localhost:3000/budget').then(function(res){
             for (var i = 0; i < res.data.myBudget.length; i++){
@@ -51,3 +45,5 @@ export const SimplePieChart = () => {
     getData();
     return null;
 };
+
+export default SimplePieChart;
