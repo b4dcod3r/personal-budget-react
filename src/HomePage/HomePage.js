@@ -12,9 +12,9 @@ function HomePage() {
                 Do you know where you are spending your money?
             </p>
           <h1>Just a pie chart</h1>
-          <canvas id="pieChart" width="400" height="400"></canvas>
+          <canvas id="pieChart" width="400" height="400"/>
           <h2>D3JS Pie Chart</h2>
-          <canvas id="d3jspie"></canvas>
+          <svg></svg>
         </div>
       </div>
     </main>
